@@ -4,9 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+    <title>DBZ RPG</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+    <header>
+    <h1>Dragon Ball Z RPG</h1>
+    </header>
+
+    <div class="main-container">
+
+        <div class="character-select">
+
+            <section class="goku_container"> 
+                <div class="name">Goku</div>
+                <img src = "assets/images/Goku_Art_2.png" class="goku-img-1">
+                <p id="gokuhp"></p>
+            </section>
+
+            <section class="vegeta_container">
+                <div class="name">Vegeta</div> 
+                <img src = "assets/images/Vegeta_Art_2.png" class="vegeta-img-1">
+                <p id="vegetahp"></p>
+            </section>
+
+            <section class="piccolo_container">
+                <div class="name">Piccolo</div>
+                <img src = "assets/images/Piccolo_Art_2.png" class="piccolo-img-1">
+                <p id="piccolohp"></p>
+            </section>
+
+            <section class="frieza_container">
+                <div class="name">Frieza</div>
+                <img src = "assets/images/Frieza_Art_2.png" class="frieza-img-1">
+                <p id="friezahp"></p>
+            </section>
+        </div>
+
+        <div class ="player-container">
+
+            <h2>Your Character</h2>
+
+        </div>
+
+        <div class ="enemy-container">
+
+            <h2>Enemies Available To Attack</h2>
+
+        </div>
+
+        <div class="fight-section">
+
+            <h2>Fight Section</h2>
+            <button>Attack</button>
+
+        </div>
+
+        <div class="defender-area">
+
+            <h2>Defender</h2>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    
+        $(document).ready(function() {
+
+            var gokuchar = $(".goku_container");
+            var vegetachar = $(".vegeta_container");
+            var piccolochar = $(".piccolo_container");
+            var friezachar = $(".frieza_container");
+    
+            //Character's Stats
+            var gokuhp = 120;
+            var vegetahp = 150;
+            var piccolohp = 100;
+            var friezahp = 180;
+
+            document.getElementById("gokuhp").innerHTML= gokuhp;
+            document.getElementById("vegetahp").innerHTML= vegetahp;
+            document.getElementById("piccolohp").innerHTML= piccolohp;
+            document.getElementById("friezahp").innerHTML= friezahp;
+
+            //User selects character
+            
+            $(gokuchar).on("click", function() {
+                gokuchar.appendTo(".player-container");
+                vegetachar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');
+                piccolochar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');;
+                friezachar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');;
+            });
+
+            $(vegetachar).on("click", function() {
+                vegetachar.appendTo(".player-container");
+                gokuchar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');
+                piccolochar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');;
+                friezachar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');;
+            });
+
+            $(piccolochar).on("click", function() {
+                piccolochar.appendTo(".player-container");
+                gokuchar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');
+                vegetachar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');;
+                friezachar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');;
+            });
+
+            $(friezachar).on("click", function() {
+                friezachar.appendTo(".player-container");
+                gokuchar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');
+                vegetachar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');;
+                piccolochar.appendTo(".enemy-container").css('background-color' , 'red').css('border' , '5px solid black');;
+            });
+         
+            
+    
+        });
+    
+    </script>
     
 </body>
 </html>

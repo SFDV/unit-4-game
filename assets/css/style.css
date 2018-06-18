@@ -1,0 +1,86 @@
+body {
+    background-image: href("assets/images/backdrop_1.png");
+}
+
+h1 {
+    text-align: center;
+}
+
+.character-select {
+    float: left;
+    width:100%;
+}
+
+.goku_container {
+    border: 5px solid green;
+    background-color: white;
+    text-align: center;
+    width: 215px;
+    float: left;
+}
+
+.vegeta_container {
+    border: 5px solid green;
+    background-color: white;
+    text-align: center;
+    width: 215px;
+    float: left;
+}
+
+.piccolo_container {
+    border: 5px solid green;
+    background-color: white;
+    text-align: center;
+    width: 215px;
+    float: left;
+}
+
+.frieza_container {
+    border: 5px solid green;
+    background-color: white;
+    text-align: center;
+    width: 215px;
+    float: left;
+}
+
+
+.goku-img-1 {
+    height: 200px;
+    width: 200px;
+
+}
+
+.vegeta-img-1 {
+    height: 200px;
+    width: 200px;
+}
+
+.piccolo-img-1 {
+    height: 200px;
+    width: 200px;
+}
+
+.frieza-img-1 {
+    height: 200px;
+    width: 200px;
+}
+
+.player-container {
+    float: left;
+    width: 100%;
+}
+
+.enemy-container {
+    float: left;
+    width: 100%;
+}
+
+.fight-section {
+    float: left;
+    width: 100%;
+}
+
+.defender-area {
+    float: left;
+    width: 100%;
+}
