@@ -18,30 +18,30 @@ gameOver = false;
 
 var goku = {
     name: "Goku",
-    hp: 150,
-    atk: 20,
-    counteratk: 20,
+    hp: 130,
+    atk: 18,
+    counteratk: 18,
 };
 
 var vegeta = {
     name: "Vegeta",
     hp: 120,
-    atk: 8,
-    counteratk: 8,
+    atk: 15,
+    counteratk: 15,
 };
 
 var piccolo = {
     name: "Piccolo",
     hp: 100,
-    atk: 5,
-    counteratk: 5,
+    atk: 13,
+    counteratk: 13,
 };
 
 var frieza = {
     name: "Frieza",
-    hp: 180,
-    atk: 25,
-    counteratk: 25,
+    hp: 150,
+    atk: 20,
+    counteratk: 20,
 };
 
 // Functions
