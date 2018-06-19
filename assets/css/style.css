@@ -1,9 +1,18 @@
+@font-face {
+    font-family: dbzfont;
+    src: url(../images/saiyan_sans/Saiyan-Sans.ttf);
+}
+
 body {
-    background-image: href("assets/images/backdrop_1.png");
+    background-image: url(../images/backdrop_1.png);
+    background-size: cover;
 }
 
 h1 {
     text-align: center;
+    font-size: 300%;
+    font-family: dbzfont;
+    color: orangered;
 }
 
 .character-select {
@@ -11,7 +20,7 @@ h1 {
     width:100%;
 }
 
-.selectable-character {
+.selectable-character, .selected-character {
     border: 5px solid green;
     background-color: white;
     text-align: center;
@@ -22,6 +31,15 @@ h1 {
 .selectable-enemy {
     border: 5px solid black;
     background-color: red;
+    text-align: center;
+    width: 215px;
+    float: left;
+}
+
+.selected-defender {
+    border: 5px solid green;
+    background-color: black;
+    color: white;
     text-align: center;
     width: 215px;
     float: left;
@@ -66,4 +84,12 @@ h1 {
 #defender-area {
     float: left;
     width: 100%;
+}
+
+#game-message {
+    float: left;
+}
+
+#restart {
+    float:left;
 }
