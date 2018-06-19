@@ -11,7 +11,7 @@ h1 {
     width:100%;
 }
 
-.goku_container {
+.selectable-character {
     border: 5px solid green;
     background-color: white;
     text-align: center;
@@ -19,30 +19,13 @@ h1 {
     float: left;
 }
 
-.vegeta_container {
-    border: 5px solid green;
-    background-color: white;
+.selectable-enemy {
+    border: 5px solid black;
+    background-color: red;
     text-align: center;
     width: 215px;
     float: left;
 }
-
-.piccolo_container {
-    border: 5px solid green;
-    background-color: white;
-    text-align: center;
-    width: 215px;
-    float: left;
-}
-
-.frieza_container {
-    border: 5px solid green;
-    background-color: white;
-    text-align: center;
-    width: 215px;
-    float: left;
-}
-
 
 .goku-img-1 {
     height: 200px;
@@ -65,22 +48,22 @@ h1 {
     width: 200px;
 }
 
-.player-container {
+#player-character {
     float: left;
     width: 100%;
 }
 
-.enemy-container {
+#enemies-available {
     float: left;
     width: 100%;
 }
 
-.fight-section {
+#fight-section {
     float: left;
     width: 100%;
 }
 
-.defender-area {
+#defender-area {
     float: left;
     width: 100%;
 }
